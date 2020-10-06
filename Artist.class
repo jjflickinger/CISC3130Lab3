@@ -1,0 +1,23 @@
+//Class consists of an artist name and a pointer to the next artist
+//Each artist is a name in a list
+class Artist {
+    String name;
+    Artist next;
+    
+    public Artist(String name, Artist next) {
+        this.name = name;
+        this.next = next;
+    }
+    
+    public Artist(String name) {
+        this.name = name;
+    }
+    
+    @Override
+    public String toString() {
+        return name;
+    }
+    public boolean equals(Artist a) {
+        return (name.equals(a.name));
+    }
+}
